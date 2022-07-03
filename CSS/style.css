@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.tst-content {
+  width: 100%;
+  max-width: 894px;
+  margin: 0 auto;
+}
+
+/*MENU           */
+
+.tst-header-contact {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: rgb(6, 6, 171);
+  color: #fff;
+}
+
+.tst-logo {
+  width: 100%;
+  max-width: 180px;
+  height: 50px;
+  margin: 12px 0 12px;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(6, 6, 171);
+  font-size: 24px;
+}
+
+.tst-nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tst-nav-list {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  max-width: 365px;
+}
+
+@media screen and (max-width: 450px) {
+  .tst-nav-list li {
+    font-size: 10px;
+    float: left;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .tst-nav-list {
+    display: flex;
+    bottom: 40px
+  }
+}
+
+.tst-nav-list a {
+  color: silver;
+}
+
+.tst-nav-list li {
+  letter-spacing: 1px;
+  margin-left: 32px;
+  position: relative;
+  top: 34px;
+  right: 76px;
+}
+
+.tst-nav-menu ul {
+  padding: 0;
+}
+
+.tst-nav-menu ul ul {
+  position: relative;
+  display: none;
+}
+
+.tst-nav-menu ul li:hover>ul {
+  width: 111px;
+  height: 90px;
+  position: absolute;
+  padding: 8px 0 0 29px;
+  z-index: 100;
+  background-color: rgb(6, 6, 171);
+  list-style: none;
+  display: block;
+}
+
+.tst-nav-menu ul ul li a {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: right;
+  font-size: 12px;
+  left: 45px;
+  bottom: 34px;
+  font-weight: 500;
+}
+
+.tst-nav-submenu {
+  top: -40px;
+  left: 155px;
+}
+
+/* PRINCIPAL- MAIN*/
+
+.tst-box-main {
+  width: 100%;
+  height: 290px;
+  background-color: silver;
+}
+
+#slider {
+  width: 100%;
+  max-width: 894px;
+  height: 290px;
+  margin: 0 auto;
+  background-color: rgb(176, 175, 175);
+  text-align: center;
+}
+
+.tst-container {
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .tst-container {
+    flex-wrap: wrap;
+  }
+}
+
+.tst-box-conteudo {
+  width: 100%;
+  max-width: 894px;
+  height: 280px;
+  margin: 0 auto;
+  display: table;
+  position: relative;
+  background-color: #fff;
+}
+
+.tst-box-conteudo h1,
+h2,
+ul {
+  text-align: left;
+  color: silver;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tst-box-image {
+  width: 100%;
+  max-width: 325px;
+  height: 212px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 6, 171);
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.tst-box-image p {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+/*BOX DE DESTAQUES*/
+.box-destaque {
+  width: 100%;
+  max-width: 894px;
+  height: 260px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+
+.box-destaque h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color: silver;
+}
+
+.box-destaque p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.tst-box-destaque {
+  width: 100%;
+  max-width: 196px;
+  height: 163px;
+  background-color: rgb(6, 6, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin: 10px 25px 0 0px;
+}
+
+/*  FOOTER  */
+footer {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: rgb(76, 75, 75);
+}
+
+.tst-nav-low {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .tst-nav-low {
+    flex-wrap: wrap;
+  }
+}
+
+.tst-nav-low {
+  display: flex;
+  list-style-type: none;
+}
+
+.tst-nav-low a {
+  color: silver;
+}
+
+.tst-nav-low li {
+  letter-spacing: 1px;
+  margin-left: 32px;
+  position: relative;
+  bottom: 36px;
+}
+
+.tst-rodape {
+  position: absolute;
+  margin-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
